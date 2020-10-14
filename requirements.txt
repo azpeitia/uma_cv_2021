@@ -42,6 +42,7 @@ python-dateutil==2.8.1
 pywinpty==0.5.7
 pyzmq==19.0.0
 qtconsole==4.6.0
+scikit-image==0.17.2
 scipy==1.5.2
 Send2Trash==1.5.0
 six==1.14.0
