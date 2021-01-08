@@ -5,8 +5,8 @@ from mpl_toolkits.mplot3d import Axes3D
 
 def plot3DScene(map_3d,imageRGB):
 
-    scale = 0.0002
-    map_3d = map_3d * scale
+    #scale = 0.0002    
+    #map_3d = map_3d * scale
 
     downsample = 8
 
@@ -40,13 +40,14 @@ def plot3DScene(map_3d,imageRGB):
     ax.set_zlabel('Z axis')
     
     # Set axes limits
-    ax.set_xlim3d(-0.006,0.006)
-    ax.set_ylim3d(-0.006,0.006)
-    ax.set_zlim3d(0.006,0.016)
+#     ax.set_xlim3d(-0.006,0.006)
+#     ax.set_ylim3d(-0.006,0.006)
+#     ax.set_zlim3d(0.006,0.016)
     
-    ax.invert_zaxis()
+    #ax.invert_zaxis()
+    #ax.invert_xaxis()
     
-    ax.view_init(elev=112, azim=-88)
+    ax.view_init(elev=-60, azim=-90)
 
     # Plot points
     ax.scatter(x_vec,y_vec,z_vec, c=rgb_vec)
